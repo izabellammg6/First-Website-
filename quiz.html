@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website for a Cooperative Gaming Group with a quiz to determine which cooperative game you should play.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png " href="no-smoke.png">
+    <title>Quit Smoking Community</title>
+</head>
+<body>
+    <header>
+        <h1>Quit Smoking Help Community</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="quiz.html"class="active">Quiz</a></li>
+                <li><a href="progress.html">Your Progress</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="quiz-about">
+            <h2>How Much Do You Want To Quit Smoking? </h2>
+            <p>At Quit Smoking Help Community, we're here to support you in your journey to quit smoking. We provide the resources, guidance, and motivation you need to break free from nicotine and live a healthier life. Together, we can make quitting a reality!</p> 
+        </section>
+
+
+        <section class="quiz">
+            
+            <fieldset>
+                <legend>On a scale of 1 to 10, how badly do you want to quit smoking?</legend>
+                <input type="radio" name="want" id="1-3" value="1-3">
+                <label for="1-3">1 - 3 (Not really)</label>
+
+                <input type="radio" name="want" id="4-6" value="4-6">
+                <label for="4-6">4-6 (Somewhat)</label>
+
+                <input type="radio" name="want" id="7-8" value="7-8">
+                <label for="7-8">7-8 (Very much)</label>
+
+                <input type="radio" name="want" id="9-10" value="9-10">
+                <label for="9-10">9-10 (I’m desperate to quit!)</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>What’s your main reason for quitting?</legend>
+                <input type="radio" name="reason" id="health" value="health">
+                <label for="health">My health is suffering</label>
+
+                <input type="radio" name="reason" id="family-friends" value="family-friends">
+                <label for="family-friends">My family/friends want me to quit</label>
+
+                <input type="radio" name="reason" id="expensive" value="expensive">
+                <label for="expensive">It’s too expensive</label>
+
+                <input type="radio" name="reason" id="dont-want" value="dont-want">
+                <label for="dont-want">I don’t actually want to quit</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Have you tried quitting before?</legend>
+
+                <input type="radio" name="tried-quit" id="never" value="never">
+                <label for="never">Never tried</label>
+
+                <input type="radio" name="tried-quit" id="once" value="once">
+                <label for="once">Tried once, but relapsed</label>
+
+                <input type="radio" name="tried-quit" id="multiple" value="multiple">
+                <label for="multiple">Tried multiple times, but struggled</label>
+
+                <input type="radio" name="tried-quit" id="trying" value="trying">
+                <label for="trying">I’m currently trying to quit</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>How do you feel when you think about quitting?</legend>
+
+                <input type="radio" name="think-about-quit" id="pink" value="pink">
+                <label for="pink">Anxious or scared</label>
+
+                <input type="radio" name="think-about-quit" id="yellow" value="yellow">
+                <label for="yellow">Neutral – I could go either way</label>
+
+                <input type="radio" name="think-about-quit" id="green" value="green">
+                <label for="green">Hopeful and determined</label>
+
+                <input type="radio" name="think-about-quit" id="black" value="black">
+                <label for="black">100% ready to quit today</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>What is your favourite colour?</legend>
+                <input type="radio" name="colour" id="pink" value="pink">
+                <label for="pink">Pink</label>
+                <input type="radio" name="colour" id="yellow" value="yellow">
+                <label for="yellow">Yellow</label>
+                <input type="radio" name="colour" id="green" value="green">
+                <label for="green">Green</label>
+                <input type="radio" name="colour" id="black" value="black">
+                <label for="black">Black</label>
+            </fieldset>
+
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,244 @@
+body {
+    background-color: #000000;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-left: 15%;
+    padding-right: 15%;
+    color: white;
+}
+
+/*styling for desktop screens */ 
+
+
+/*styling a navigation bar from a bullet point list*/
+/*remove bullet points and margin from the list*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color:#AD343E;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*style the list items as a horizontal navigation bar*/
+nav li {
+    display: inline;
+    text-align: center;
+    
+}
+
+/*style the links in the navigation bar*/
+nav a {
+    padding: 12px 16px;
+    text-decoration: none;
+    color: black;
+    
+    
+}
+
+/*style the links in the navigation bar when hovered over*/
+nav li a:hover {
+    background-color:#FFFFFF;
+    color: black;
+}
+
+/*style the active link in the navigation bar*/
+nav .active {
+    background-color:#F2AF29;
+    color: black;
+}
+
+/*set up a grid layout*/
+.container {
+    display: grid;
+    grid-template-columns:repeat(6, minmax(0, 1fr));
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+/*set images to the size of the container*/
+img {
+    width: 100%;
+    height: auto;
+}
+
+.about {
+    grid-column: 1 / span 5;
+    grid-row: 1;
+    margin-left: 15px;
+}
+
+.benefits {
+    grid-column: 1 / span 5;
+    grid-row: 2;
+    background-color: #AD343E;
+    color: white;
+    padding: 5% 10%;
+    margin: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.missions {
+    grid-column: 1 / span 5;
+    grid-row: 3;
+    text-align: center;
+}
+
+.aside {
+    background-color: yellow;
+    grid-column: 6 ;
+    grid-row: 1 / span 3 ;
+    font-size: 16px;
+    height: 100%; 
+    border-radius: 10px;
+    color: #000000;
+
+}
+
+.aside ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    margin-top: 10px;
+   
+}
+
+.header-cravings {
+    grid-column: 1/ span 6;
+    grid-row: 4;
+    text-align: center;
+    border-radius: 10px;
+}
+.cravingC {
+    grid-column: 1 / span 6; /* add the grid to insert your flex in the right place */
+    flex-wrap: wrap;
+    display:flex;
+    gap: 15px;
+    justify-content: space-between; /* Ensures spacing between items */
+    align-items: stretch;
+    width: 100%; /* Ensure it takes full width */
+    margin: 0 auto; /* Centers the container */
+}
+
+.cravings {
+    flex: 1 1 25%; /* Each item takes about 30% width */
+    min-width: 280px; /* Prevents shrinking too much */
+    max-width: 300px; /* Ensures proper wrapping */
+    background-color: #F2AF29;
+    color:#000000;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    border: 2px solid #AD343E;
+}
+.signup {
+    grid-column: 1 / span 
+    6;
+    grid-row: 6;
+}
+
+.card {
+    background-color: #AD343E;}
+
+.quiz-about {
+    color: #F2AF29;
+    
+}
+
+.quiz-about h1 {
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+
+    .container {
+        display: grid;
+        grid-template-columns:repeat(6, minmax(0, 1fr));
+        grid-gap: 20px;
+    }
+    
+   
+    img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .about {
+        grid-column: 1 / span 5;
+        grid-row: 1;
+        margin-left: 15px;
+    }
+    
+    .benefits {
+        grid-column: 1 / span 5;
+        grid-row: 2;
+        background-color: #AD343E;
+        color: white;
+        padding: 5% 10%;
+        margin: 15px;
+    }
+    
+    .location {
+        grid-column: 1 / span 5;
+        grid-row: 3;
+    }
+    
+    .aside {
+        grid-column: 6 / span 1;
+        grid-row: 1 / span 3;
+        font-size: 16px;    
+    }
+    
+    .aside ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+       
+    }
+    
+    .header-cravings {
+        grid-column: 1/ span 6;
+        grid-row: 4;
+        text-align: center;
+    }
+    .cravingC {
+        grid-column: 1 / span 6; 
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between; 
+        align-items: stretch;
+        width: 100%;
+        max-width: 1000px; 
+        margin: 0 auto; 
+    }
+    
+    .cravings {
+        flex: 1 1 30%; 
+        min-width: 280px; 
+        max-width: 300px; 
+        background-color: #F2AF29;
+        color:#000000;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+        border: 2px solid #AD343E;
+        
+    }
+    .signup {
+        grid-column: 1 / span 
+        6;
+        grid-row: 6;
+    
+    }
+    
+    .card {
+        background-color: #AD343E;}
+    
+}
+
+
+
