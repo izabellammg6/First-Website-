@@ -5,8 +5,8 @@ This is the first website I have created on the MadLab Intro to Web Development 
 This mark down file will also serve as a place to practice my markdown syntax 
 
 # A first-level heading 
-# # A second-level heading 
-# # # A third-level heading 
+## A second-level heading 
+### A third-level heading 
 
 **this is bold**
 *this is italix text*
