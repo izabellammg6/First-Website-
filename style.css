@@ -6,11 +6,7 @@ body {
     color: white;
 }
 
-/*styling for desktop screens */ 
 
-
-/*styling a navigation bar from a bullet point list*/
-/*remove bullet points and margin from the list*/
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -21,14 +17,14 @@ nav ul {
     text-align: center;
 }
 
-/*style the list items as a horizontal navigation bar*/
+
 nav li {
     display: inline;
     text-align: center;
     
 }
 
-/*style the links in the navigation bar*/
+
 nav a {
     padding: 12px 16px;
     text-decoration: none;
@@ -37,19 +33,19 @@ nav a {
     
 }
 
-/*style the links in the navigation bar when hovered over*/
+
 nav li a:hover {
     background-color:#FFFFFF;
     color: black;
 }
 
-/*style the active link in the navigation bar*/
+
 nav .active {
     background-color:#F2AF29;
     color: black;
 }
 
-/*set up a grid layout*/
+
 .container {
     display: grid;
     grid-template-columns:repeat(6, minmax(0, 1fr));
@@ -57,7 +53,7 @@ nav .active {
     margin-top: 10px;
 }
 
-/*set images to the size of the container*/
+
 img {
     width: 100%;
     height: auto;
@@ -87,22 +83,51 @@ img {
 }
 
 .aside {
-    background-color: yellow;
-    grid-column: 6 ;
-    grid-row: 1 / span 3 ;
+    background-color: #F2AF29; 
+    grid-column: 6;
+    grid-row: 1 / span 3;
     font-size: 16px;
-    height: 100%; 
+    height: auto; 
     border-radius: 10px;
     color: #000000;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    width:100%;
+}
 
+.aside h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #AD343E; 
+    padding-bottom: 10px;
 }
 
 .aside ul {
     list-style-type: none;
-    margin: 10px;
     padding: 0;
-    margin-top: 10px;
-   
+}
+
+.aside ul li {
+    padding: 10px 0;
+}
+
+.aside ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    background: #FFFFFF;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.aside ul li a:hover {
+    background: #AD343E;
+    color: white;
+    transform: scale(1.05);
 }
 
 .header-cravings {
@@ -112,20 +137,20 @@ img {
     border-radius: 10px;
 }
 .cravingC {
-    grid-column: 1 / span 6; /* add the grid to insert your flex in the right place */
+    grid-column: 1 / span 6; 
     flex-wrap: wrap;
     display:flex;
     gap: 15px;
-    justify-content: space-between; /* Ensures spacing between items */
+    justify-content: space-between; 
     align-items: stretch;
-    width: 100%; /* Ensure it takes full width */
-    margin: 0 auto; /* Centers the container */
+    width: 100%; 
+    margin: 0 auto; 
 }
 
 .cravings {
-    flex: 1 1 25%; /* Each item takes about 30% width */
-    min-width: 280px; /* Prevents shrinking too much */
-    max-width: 300px; /* Ensures proper wrapping */
+    flex: 1 1 25%; 
+    min-width: 280px; 
+    max-width: 300px; 
     background-color: #F2AF29;
     color:#000000;
     padding: 20px;
@@ -152,93 +177,107 @@ img {
     text-align: center;
 }
 
-@media screen and (max-width:600px) {
 
+@media screen and (max-width: 1024px) {
     .container {
-        display: grid;
-        grid-template-columns:repeat(6, minmax(0, 1fr));
-        grid-gap: 20px;
-    }
-    
-   
-    img {
-        width: 100%;
-        height: auto;
-    }
-    
-    .about {
-        grid-column: 1 / span 5;
-        grid-row: 1;
-        margin-left: 15px;
-    }
-    
-    .benefits {
-        grid-column: 1 / span 5;
-        grid-row: 2;
-        background-color: #AD343E;
-        color: white;
-        padding: 5% 10%;
-        margin: 15px;
-    }
-    
-    .location {
-        grid-column: 1 / span 5;
-        grid-row: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
     
     .aside {
-        grid-column: 6 / span 1;
-        grid-row: 1 / span 3;
-        font-size: 16px;    
+        width: 80%; 
+        margin: 20px auto;
+        order: 10;
     }
-    
-    .aside ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-       
-    }
-    
-    .header-cravings {
-        grid-column: 1/ span 6;
-        grid-row: 4;
-        text-align: center;
-    }
-    .cravingC {
-        grid-column: 1 / span 6; 
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: space-between; 
-        align-items: stretch;
-        width: 100%;
-        max-width: 1000px; 
-        margin: 0 auto; 
-    }
-    
-    .cravings {
-        flex: 1 1 30%; 
-        min-width: 280px; 
-        max-width: 300px; 
-        background-color: #F2AF29;
-        color:#000000;
-        padding: 20px;
-        text-align: center;
-        border-radius: 10px;
-        transition: transform 0.3s ease;
-        border: 2px solid #AD343E;
-        
-    }
-    .signup {
-        grid-column: 1 / span 
-        6;
-        grid-row: 6;
-    
-    }
-    
-    .card {
-        background-color: #AD343E;}
-    
 }
 
+@media screen and (max-width: 768px) {
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav li {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefits, .missions, .signup {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .cravingC {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cravings {
+        width: 90%;
+    }
+
+    .aside {
+        width: 100%; 
+        margin-top: 20px;
+        padding: 15px;
+        font-size: 14px;
+        order: 10; 
+        text-align: center;
+    }
+
+    .aside ul {
+        padding: 0;
+    }
+
+    .aside ul li {
+        padding: 10px 0;
+    }
+
+    .aside ul li a {
+        display: block;
+        background: #FFFFFF;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background 0.3s ease-in-out, transform 0.2s ease;
+    }
+
+    .aside ul li a:hover {
+        background: #AD343E;
+        color: white;
+        transform: scale(1.05);
+    }
+}
+
+    footer {
+        text-align: center;
+    }
 
 
+/* Adjust Navigation for Mobile */
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        background-color: #AD343E;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

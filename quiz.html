@@ -79,50 +79,89 @@
             <fieldset>
                 <legend>How do you feel when you think about quitting?</legend>
 
-                <input type="radio" name="think-about-quit" id="pink" value="pink">
-                <label for="pink">Anxious or scared</label>
+                <input type="radio" name="think-about-quit" id="anxious" value="anxious">
+                <label for="anxious">Anxious or scared</label>
 
-                <input type="radio" name="think-about-quit" id="yellow" value="yellow">
-                <label for="yellow">Neutral – I could go either way</label>
+                <input type="radio" name="think-about-quit" id="neutral" value="neutral">
+                <label for="neutral">Neutral – I could go either way</label>
 
-                <input type="radio" name="think-about-quit" id="green" value="green">
-                <label for="green">Hopeful and determined</label>
+                <input type="radio" name="think-about-quit" id="hopeful" value="hopeful">
+                <label for="hopeful">Hopeful and determined</label>
 
-                <input type="radio" name="think-about-quit" id="black" value="black">
-                <label for="black">100% ready to quit today</label>
+                <input type="radio" name="think-about-quit" id="100quit" value="100quit">
+                <label for="100quit">100% ready to quit today</label>
             </fieldset>
+
             <br>
             <fieldset>
                 <legend>Do you have a plan to quit smoking?</legend>
 
-                <input type="radio" name="colour" id="pink" value="pink">
-                <label for="pink">No plan at all</label>
+                <input type="radio" name="plan-quit" id="no-plan" value="no-plan">
+                <label for="no-plan">No plan at all</label>
 
-                <input type="radio" name="colour" id="yellow" value="yellow">
-                <label for="yellow">Thinking about it, but no action yet</label>
+                <input type="radio" name="plan-quit" id="no-action" value="no-action">
+                <label for="no-action">Thinking about it, but no action yet</label>
 
-                <input type="radio" name="colour" id="green" value="green">
-                <label for="green">I have a plan, but haven’t started</label>
+                <input type="radio" name="plan-quit" id="plan-not-started" value="plan-not-started">
+                <label for="plan-not-started">I have a plan, but haven’t started</label>
 
-                <input type="radio" name="colour" id="black" value="black">
-                <label for="black">I’m already working on quitting</label>
+                <input type="radio" name="plan-quit" id="working-on" value="working-on">
+                <label for="working-on">I’m already working on quitting</label>
             </fieldset>
+
             <br>
             <fieldset>
                 <legend>What’s your biggest challenge in quitting?</legend>
 
-                <input type="radio" name="colour" id="pink" value="pink">
-                <label for="pink">Cravings and withdrawal</label>
+                <input type="radio" name="biggest-challenge" id="withdrawal" value="withdrawal">
+                <label for="withdrawal">Cravings and withdrawal</label>
 
-                <input type="radio" name="colour" id="yellow" value="yellow">
-                <label for="yellow">Stress and emotions</label>
+                <input type="radio" name="biggest-challenge" id="stress-emotions" value="stress-emotions">
+                <label for="stress-emotions">Stress and emotions</label>
 
-                <input type="radio" name="colour" id="green" value="green">
-                <label for="green">Social situations (friends who smoke, parties, etc.)</label>
+                <input type="radio" name="biggest-challenge" id="social-situation" value="social-situation">
+                <label for="social-situation">Social situations (friends who smoke, parties, etc.)</label>
 
-                <input type="radio" name="colour" id="black" value="black">
-                <label for="black">I don’t believe I can quit</label>
+                <input type="radio" name="biggest-challenge" id="dont-believe" value="dont-believe">
+                <label for="dont-believe">I don’t believe I can quit</label>
             </fieldset>
+
+            <br>
+            <fieldset>
+                <legend>Have you considered getting support (therapy, nicotine replacement, support groups, etc.)?</legend>
+
+                <input type="radio" name="support" id="prefer-alone" value="prefer-alone">
+                <label for="prefer-alone">No, I prefer to do it alone</label>
+
+                <input type="radio" name="support" id="not-tried" value="not-tried">
+                <label for="not-tried">I’ve thought about it but haven’t tried</label>
+
+                <input type="radio" name="support" id="methods" value="methods">
+                <label for="methods">I’ve tried some methods but need more help</label>
+
+                <input type="radio" name="support" id="support-resources" value="support-resources">
+                <label for="support-resources">I already have support and resources</label>
+            </fieldset>
+
+            <br>
+            <fieldset>
+                <legend>Do you feel uncomfortable or embarrassed about being a smoker?</legend>
+
+                <input type="radio" name="uncomfortable" id="fine-with" value="fine-with">
+                <label for="fine-with">Not at all, I’m fine with it</label>
+
+                <input type="radio" name="uncomfortable" id="fine-with" value="fine-with">
+                <label for="fine-with">Sometimes, in certain situations</label>
+
+                <input type="radio" name="uncomfortable" id="fine-with" value="fine-with">
+                <label for="fine-with">Yes, I feel judged by others</label>
+
+                <input type="radio" name="uncomfortable" id="hate-and-wish" value="hate-and-wish">
+                <label for="hate-and-wish">I hate it and wish I could stop</label>
+            </fieldset>
+            <br>
+            <button type="button" onclick="checkAnswers()">Submit</button>
+
         </section>
     </main>
 </body>
