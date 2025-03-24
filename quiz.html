@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Website for a Cooperative Gaming Group with a quiz to determine which cooperative game you should play.">
+    <meta name="description" content="Join the Quit Smoking Community for support, resources, and motivation to quit smoking for good.">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png " href="no-smoke.png">
+    <link rel="icon" type="image/png" href="no-smoke.png">
     <title>Quit Smoking Community</title>
 </head>
 <body>
@@ -13,155 +13,119 @@
         <h1>Quit Smoking Help Community</h1>
         <nav>
             <ul>
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="quiz.html"class="active">Quiz</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quiz.html" class="active">Quiz</a></li>
                 <li><a href="progress.html">Your Progress</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-
         <section class="quiz-about">
-            <h2>How Much Do You Want To Quit Smoking? </h2>
+            <h2>How Much Do You Want To Quit Smoking?</h2>
             <p>At Quit Smoking Help Community, we're here to support you in your journey to quit smoking. We provide the resources, guidance, and motivation you need to break free from nicotine and live a healthier life. Together, we can make quitting a reality!</p> 
         </section>
 
-
         <section class="quiz">
-            
-            <fieldset>
-                <legend>On a scale of 1 to 10, how badly do you want to quit smoking?</legend>
-                <input type="radio" name="want" id="1-3" value="1-3">
-                <label for="1-3">1 - 3 (Not really)</label>
+            <form name="quiz">
+                <fieldset>
+                    <legend>On a scale of 1 to 10, how badly do you want to quit smoking?</legend>
+                    <input type="radio" name="want" id="1-3" value="1-3">
+                    <label for="1-3">1 - 3 (Not really)</label>
 
-                <input type="radio" name="want" id="4-6" value="4-6">
-                <label for="4-6">4-6 (Somewhat)</label>
+                    <input type="radio" name="want" id="4-6" value="4-6">
+                    <label for="4-6">4-6 (Somewhat)</label>
 
-                <input type="radio" name="want" id="7-8" value="7-8">
-                <label for="7-8">7-8 (Very much)</label>
+                    <input type="radio" name="want" id="7-8" value="7-8">
+                    <label for="7-8">7-8 (Very much)</label>
 
-                <input type="radio" name="want" id="9-10" value="9-10">
-                <label for="9-10">9-10 (I’m desperate to quit!)</label>
-            </fieldset>
-            <br>
-            <fieldset>
-                <legend>What’s your main reason for quitting?</legend>
-                <input type="radio" name="reason" id="health" value="health">
-                <label for="health">My health is suffering</label>
+                    <input type="radio" name="want" id="9-10" value="9-10">
+                    <label for="9-10">9-10 (I’m desperate to quit!)</label>
+                </fieldset>
+                <br>
 
-                <input type="radio" name="reason" id="family-friends" value="family-friends">
-                <label for="family-friends">My family/friends want me to quit</label>
+                <fieldset>
+                    <legend>What’s your main reason for quitting?</legend>
+                    <input type="radio" name="reason" id="health" value="health">
+                    <label for="health">My health is suffering</label>
 
-                <input type="radio" name="reason" id="expensive" value="expensive">
-                <label for="expensive">It’s too expensive</label>
+                    <input type="radio" name="reason" id="family_friends" value="family_friends">
+                    <label for="family_friends">My family/friends want me to quit</label>
 
-                <input type="radio" name="reason" id="dont-want" value="dont-want">
-                <label for="dont-want">I don’t actually want to quit</label>
-            </fieldset>
-            <br>
-            <fieldset>
-                <legend>Have you tried quitting before?</legend>
+                    <input type="radio" name="reason" id="expensive" value="expensive">
+                    <label for="expensive">It’s too expensive</label>
 
-                <input type="radio" name="tried-quit" id="never" value="never">
-                <label for="never">Never tried</label>
+                    <input type="radio" name="reason" id="dont_want" value="dont_want">
+                    <label for="dont_want">I don’t actually want to quit</label>
+                </fieldset>
+                <br>
 
-                <input type="radio" name="tried-quit" id="once" value="once">
-                <label for="once">Tried once, but relapsed</label>
+                <fieldset>
+                    <legend>Have you tried quitting before?</legend>
+                    <input type="radio" name="tried_quit" id="never" value="never">
+                    <label for="never">Never tried</label>
 
-                <input type="radio" name="tried-quit" id="multiple" value="multiple">
-                <label for="multiple">Tried multiple times, but struggled</label>
+                    <input type="radio" name="tried_quit" id="once" value="once">
+                    <label for="once">Tried once, but relapsed</label>
 
-                <input type="radio" name="tried-quit" id="trying" value="trying">
-                <label for="trying">I’m currently trying to quit</label>
-            </fieldset>
-            <br>
-            <fieldset>
-                <legend>How do you feel when you think about quitting?</legend>
+                    <input type="radio" name="tried_quit" id="multiple" value="multiple">
+                    <label for="multiple">Tried multiple times, but struggled</label>
 
-                <input type="radio" name="think-about-quit" id="anxious" value="anxious">
-                <label for="anxious">Anxious or scared</label>
+                    <input type="radio" name="tried_quit" id="trying" value="trying">
+                    <label for="trying">I’m currently trying to quit</label>
+                </fieldset>
+                <br>
 
-                <input type="radio" name="think-about-quit" id="neutral" value="neutral">
-                <label for="neutral">Neutral – I could go either way</label>
+                <fieldset>
+                    <legend>How do you feel when you think about quitting?</legend>
+                    <input type="radio" name="think_about_quit" id="anxious" value="anxious">
+                    <label for="anxious">Anxious or scared</label>
 
-                <input type="radio" name="think-about-quit" id="hopeful" value="hopeful">
-                <label for="hopeful">Hopeful and determined</label>
+                    <input type="radio" name="think_about_quit" id="neutral" value="neutral">
+                    <label for="neutral">Neutral – I could go either way</label>
 
-                <input type="radio" name="think-about-quit" id="100quit" value="100quit">
-                <label for="100quit">100% ready to quit today</label>
-            </fieldset>
+                    <input type="radio" name="think_about_quit" id="hopeful" value="hopeful">
+                    <label for="hopeful">Hopeful and determined</label>
 
-            <br>
-            <fieldset>
-                <legend>Do you have a plan to quit smoking?</legend>
+                    <input type="radio" name="think_about_quit" id="100quit" value="100quit">
+                    <label for="100quit">100% ready to quit today</label>
+                </fieldset>
+                <br>
 
-                <input type="radio" name="plan-quit" id="no-plan" value="no-plan">
-                <label for="no-plan">No plan at all</label>
+                <fieldset>
+                    <legend>Do you have a plan to quit smoking?</legend>
+                    <input type="radio" name="plan_quit" id="no_plan" value="no_plan">
+                    <label for="no_plan">No plan at all</label>
 
-                <input type="radio" name="plan-quit" id="no-action" value="no-action">
-                <label for="no-action">Thinking about it, but no action yet</label>
+                    <input type="radio" name="plan_quit" id="no_action" value="no_action">
+                    <label for="no_action">Thinking about it, but no action yet</label>
 
-                <input type="radio" name="plan-quit" id="plan-not-started" value="plan-not-started">
-                <label for="plan-not-started">I have a plan, but haven’t started</label>
+                    <input type="radio" name="plan_quit" id="plan_not_started" value="plan_not_started">
+                    <label for="plan_not_started">I have a plan, but haven’t started</label>
 
-                <input type="radio" name="plan-quit" id="working-on" value="working-on">
-                <label for="working-on">I’m already working on quitting</label>
-            </fieldset>
+                    <input type="radio" name="plan_quit" id="working_on" value="working_on">
+                    <label for="working_on">I’m already working on quitting</label>
+                </fieldset>
+                <br>
 
-            <br>
-            <fieldset>
-                <legend>What’s your biggest challenge in quitting?</legend>
+                <fieldset>
+                    <legend>What’s your biggest challenge in quitting?</legend>
+                    <input type="radio" name="biggest_challenge" id="withdrawal" value="withdrawal">
+                    <label for="withdrawal">Cravings and withdrawal</label>
 
-                <input type="radio" name="biggest-challenge" id="withdrawal" value="withdrawal">
-                <label for="withdrawal">Cravings and withdrawal</label>
+                    <input type="radio" name="biggest_challenge" id="stress_emotions" value="stress_emotions">
+                    <label for="stress_emotions">Stress and emotions</label>
 
-                <input type="radio" name="biggest-challenge" id="stress-emotions" value="stress-emotions">
-                <label for="stress-emotions">Stress and emotions</label>
+                    <input type="radio" name="biggest_challenge" id="social_situation" value="social_situation">
+                    <label for="social_situation">Social situations (friends who smoke, parties, etc.)</label>
 
-                <input type="radio" name="biggest-challenge" id="social-situation" value="social-situation">
-                <label for="social-situation">Social situations (friends who smoke, parties, etc.)</label>
+                    <input type="radio" name="biggest_challenge" id="dont_believe" value="dont_believe">
+                    <label for="dont_believe">I don’t believe I can quit</label>
+                </fieldset>
+                <br>
 
-                <input type="radio" name="biggest-challenge" id="dont-believe" value="dont-believe">
-                <label for="dont-believe">I don’t believe I can quit</label>
-            </fieldset>
-
-            <br>
-            <fieldset>
-                <legend>Have you considered getting support (therapy, nicotine replacement, support groups, etc.)?</legend>
-
-                <input type="radio" name="support" id="prefer-alone" value="prefer-alone">
-                <label for="prefer-alone">No, I prefer to do it alone</label>
-
-                <input type="radio" name="support" id="not-tried" value="not-tried">
-                <label for="not-tried">I’ve thought about it but haven’t tried</label>
-
-                <input type="radio" name="support" id="methods" value="methods">
-                <label for="methods">I’ve tried some methods but need more help</label>
-
-                <input type="radio" name="support" id="support-resources" value="support-resources">
-                <label for="support-resources">I already have support and resources</label>
-            </fieldset>
-
-            <br>
-            <fieldset>
-                <legend>Do you feel uncomfortable or embarrassed about being a smoker?</legend>
-
-                <input type="radio" name="uncomfortable" id="fine-with" value="fine-with">
-                <label for="fine-with">Not at all, I’m fine with it</label>
-
-                <input type="radio" name="uncomfortable" id="fine-with" value="fine-with">
-                <label for="fine-with">Sometimes, in certain situations</label>
-
-                <input type="radio" name="uncomfortable" id="fine-with" value="fine-with">
-                <label for="fine-with">Yes, I feel judged by others</label>
-
-                <input type="radio" name="uncomfortable" id="hate-and-wish" value="hate-and-wish">
-                <label for="hate-and-wish">I hate it and wish I could stop</label>
-            </fieldset>
-            <br>
-            <button type="button" onclick="checkAnswers()">Submit</button>
-
+                <button type="submit">Submit</button>
+            </form>
         </section>
     </main>
 </body>
