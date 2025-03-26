@@ -11,18 +11,23 @@ function checkAnswers() {
 
     let answer1 = getValue("want");
     let answer2 = getValue("reason");
-    let answer3 = getValue("tried-quit");
-    let answer4 = getValue("think-about-quit");
-    let answer5 = getValue("plan-quit");
-    let answer6 = getValue("biggest-challenge");
+    let answer3 = getValue("tried_quit");
+    let answer4 = getValue("think_about_quit");
+    let answer5 = getValue("plan_quit");
+    let answer6 = getValue("biggest_challenge");
     let answer7 = getValue("support");
     let answer8 = getValue("uncomfortable");
 
-
+    console.log(answer1)
+    console.log(answer3)
     if (!answer1 || !answer2 || !answer3 || !answer4 || !answer5 || !answer6 || !answer7 || !answer8) {
         alert("Please answer all questions before submitting.");
         return;
     }
+    // if (answer1 == null || !answer2 || !answer3 || !answer4 || !answer5 || !answer6 || !answer7 || !answer8) {
+    //     alert("Please answer all questions before submitting.");
+    //     return;
+    // }
 
     
     if (answer1 === "1-3") {
@@ -129,7 +134,6 @@ function checkAnswers() {
     else {
          score += 4;
     }
-
     
     if (score < 10) {
         result = "You may not be ready to quit yet, but learning more about the benefits of quitting could help.";
