@@ -18,8 +18,7 @@ function checkAnswers() {
     let answer7 = getValue("support");
     let answer8 = getValue("uncomfortable");
 
-    console.log(answer1)
-    console.log(answer3)
+
     if (!answer1 || !answer2 || !answer3 || !answer4 || !answer5 || !answer6 || !answer7 || !answer8) {
         alert("Please answer all questions before submitting.");
         return;
@@ -30,13 +29,13 @@ function checkAnswers() {
     // }
 
     
-    if (answer1 === "1-3") {
+    if (answer1 === "1_3") {
         score += 1; 
     }
-    else if (answer1 === "4-6") {
+    else if (answer1 === "4_6") {
         score += 2;
     }
-    else if (answer1 === "7-8") {
+    else if (answer1 === "7_8") {
         score += 3;
     }
     else {
@@ -44,16 +43,16 @@ function checkAnswers() {
     }
 
     if (answer2 === "health") {
-        score += 1;
+        score += 4;
     }
-    else if (answer2 === "family-friends"){
+    else if (answer2 === "family_friends"){
          score += 2;
     }
     else if (answer2 === "expensive") {
         score += 3;
     }
     else {
-         score += 4;
+         score += 1;
     }
 
     if (answer3 === "never"){
@@ -82,13 +81,13 @@ function checkAnswers() {
         score += 4;
     }
 
-    if (answer5 === "no-plan") {
+    if (answer5 === "no_plan") {
         score += 1;
     }
-    else if (answer5 === "no-action") {
+    else if (answer5 === "no_action") {
          score += 2;
     }
-    else if (answer5 === "plan-not-started") {
+    else if (answer5 === "plan_not_started") {
         score += 3;
     }
     else {
@@ -98,20 +97,20 @@ function checkAnswers() {
     if (answer6 === "withdrawal") {
         score += 1;
     }
-    else if (answer6 === "stress-emotions") {
+    else if (answer6 === "stress_emotions") {
         score += 2;
     }
-    else if (answer6 === "social-situation") {
-        score += 3;
-    }
-    else {
+    else if (answer6 === "social_situation") {
         score += 4;
     }
+    else {
+        score += 3;
+    }
 
-    if (answer7 === "prefer-alone") {
+    if (answer7 === "prefer_alone") {
         score += 1;
     }
-    else if (answer7 === "not-tried") {
+    else if (answer7 === "not_tried") {
         score += 2;
     }
     else if (answer7 === "methods") {
@@ -122,13 +121,13 @@ function checkAnswers() {
         score += 4;
     }
 
-    if (answer8 === "fine-with") {
+    if (answer8 === "fine_with") {
         score += 1;
     }
     else if (answer8 === "sometimes") {
         score += 2;
     }
-    else if (answer8 === "fell-judged"){
+    else if (answer8 === "fell_judged"){
          score += 3;}
 
     else {
@@ -145,6 +144,10 @@ function checkAnswers() {
         result = "You’re fully committed and ready to take action—go for it!";
     }
 
-    document.getElementById("result").innerText = `Your result: ${result}`;
+   document.getElementById("result").innerText = `Your result: ${result}`;
+
+   window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
 
 }
+
+document.getElementById("submitBtn").addEventListener("click", checkAnswers);

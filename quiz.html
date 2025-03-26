@@ -23,24 +23,24 @@
     <main>
         <section class="quiz-about">
             <h2>How Much Do You Want To Quit Smoking?</h2>
-            <p>At Quit Smoking Help Community, we're here to support you in your journey to quit smoking. We provide the resources, guidance, and motivation you need to break free from nicotine and live a healthier life. Together, we can make quitting a reality!</p> 
+            <p>This quiz will help you understand your level of readiness to quit smoking. By answering a few simple questions about your motivation, past attempts, and challenges, you'll get a personalized result that can guide you on your quitting journey.</p> 
         </section>
 
         <section class="quiz">
             <form name="quiz">
                 <fieldset>
                     <legend>On a scale of 1 to 10, how badly do you want to quit smoking?</legend>
-                    <input type="radio" name="want" id="1-3" value="1-3">
-                    <label for="1-3">1 - 3 (Not really)</label>
+                    <input type="radio" name="want" id="1_3" value="1_3">
+                    <label for="1_3">1 - 3 (Not really)</label>
 
-                    <input type="radio" name="want" id="4-6" value="4-6">
-                    <label for="4-6">4-6 (Somewhat)</label>
+                    <input type="radio" name="want" id="4_6" value="4_6">
+                    <label for="4_6">4-6 (Somewhat)</label>
 
-                    <input type="radio" name="want" id="7-8" value="7-8">
-                    <label for="7-8">7-8 (Very much)</label>
+                    <input type="radio" name="want" id="7_8" value="7_8">
+                    <label for="7_8">7-8 (Very much)</label>
 
-                    <input type="radio" name="want" id="9-10" value="9-10">
-                    <label for="9-10">9-10 (I’m desperate to quit!)</label>
+                    <input type="radio" name="want" id="9_10" value="9_10">
+                    <label for="9_10">9-10 (I’m desperate to quit!)</label>
                 </fieldset>
                 <br>
 
@@ -127,37 +127,38 @@
                 <fieldset>
                     <legend>Have you considered getting support (therapy, nicotine replacement, support groups, etc.)?</legend>
     
-                    <input type="radio" name="support" id="prefer-alone" value="prefer-alone">
+                    <input type="radio" name="support" id="prefer_alone" value="prefer_alone">
                     <label for="prefer-alone">No, I prefer to do it alone</label>
     
-                    <input type="radio" name="support" id="not-tried" value="not-tried">
-                    <label for="not-tried">I’ve thought about it but haven’t tried</label>
+                    <input type="radio" name="support" id="not_tried" value="not_tried">
+                    <label for="not_tried">I’ve thought about it but haven’t tried</label>
     
                     <input type="radio" name="support" id="methods" value="methods">
                     <label for="methods">I’ve tried some methods but need more help</label>
     
-                    <input type="radio" name="support" id="support-resources" value="support-resources">
-                    <label for="support-resources">I already have support and resources</label>
+                    <input type="radio" name="support" id="support_resources" value="support_resources">
+                    <label for="support_resources">I already have support and resources</label>
                 </fieldset>
     
                 <br>
                 <fieldset>
                     <legend>Do you feel uncomfortable or embarrassed about being a smoker?</legend>
     
-                    <input type="radio" name="uncomfortable" id="fine-with" value="fine-with">
-                    <label for="fine-with">Not at all, I’m fine with it</label>
+                    <input type="radio" name="uncomfortable" id="fine_with" value="fine_with">
+                    <label for="fine_with">Not at all, I’m fine with it</label>
     
                     <input type="radio" name="uncomfortable" id="sometimes" value="sometimes">
                     <label for="sometimes">Sometimes, in certain situations</label>
     
-                    <input type="radio" name="uncomfortable" id="fell-judged" value="fell-judged">
-                    <label for="fell-judged">Yes, I feel judged by others</label>
+                    <input type="radio" name="uncomfortable" id="fell_judged" value="fell_judged">
+                    <label for="fell_judged">Yes, I feel judged by others</label>
     
-                    <input type="radio" name="uncomfortable" id="hate-and-wish" value="hate-and-wish">
-                    <label for="hate-and-wish">I hate it and wish I could stop</label>
+                    <input type="radio" name="uncomfortable" id="hate_and_wish" value="hate_and_wish">
+                    <label for="hate_and_wish">I hate it and wish I could stop</label>
                 </fieldset>
+                <br>
+                <button class="quiz_button" type="button" onclick="checkAnswers()">Submit</button>
 
-                <button type="button" onclick="checkAnswers()">Submit</button>
                 
             </form>
             <div id="result" style="margin-top: 20px; font-weight: bold;"></div>
@@ -166,6 +167,10 @@
     </main>
 
     <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2025 Quit Smoking Help Community </p>
+    </footer>
 
 </body>
 </html>
