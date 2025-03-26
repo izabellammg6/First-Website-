@@ -26,7 +26,7 @@
             <p>This quiz will help you understand your level of readiness to quit smoking. By answering a few simple questions about your motivation, past attempts, and challenges, you'll get a personalized result that can guide you on your quitting journey.</p> 
         </section>
 
-        <section class="quiz">
+        <section class="quiz-index">
             <form name="quiz">
                 <fieldset>
                     <legend>On a scale of 1 to 10, how badly do you want to quit smoking?</legend>
@@ -126,7 +126,6 @@
 
                 <fieldset>
                     <legend>Have you considered getting support (therapy, nicotine replacement, support groups, etc.)?</legend>
-    
                     <input type="radio" name="support" id="prefer_alone" value="prefer_alone">
                     <label for="prefer-alone">No, I prefer to do it alone</label>
     
@@ -157,11 +156,16 @@
                     <label for="hate_and_wish">I hate it and wish I could stop</label>
                 </fieldset>
                 <br>
-                <button class="quiz_button" type="button" onclick="checkAnswers()">Submit</button>
+                <button class="quiz_button" type="button" onclick="checkAnswers()" >Submit</button>
 
+                <!-- <div id="resultContainer">
+                    <p id="result"></p>
+                    <img id="resultImage" src="img/close-up-woman-saying-no-holding-bunch-cigarettes-hand_23-2148185418.avif" alt="Result Image"/>
+                </div> -->
+                
                 
             </form>
-            <div id="result" style="margin-top: 20px; font-weight: bold;"></div>
+           
 
         </section>
     </main>

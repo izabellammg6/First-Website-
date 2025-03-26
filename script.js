@@ -136,15 +136,23 @@ function checkAnswers() {
     
     if (score < 10) {
         result = "You may not be ready to quit yet, but learning more about the benefits of quitting could help.";
+         imageUrl = "";
+
     } else if (score < 20) {
         result = "You’re thinking about quitting, but you might need more motivation and a solid plan.";
+        // imageUrl =;
+
     } else if (score < 30) {
         result = "You’re determined to quit and just need the right strategy and support.";
+        // imageUrl =;
+
     } else {
         result = "You’re fully committed and ready to take action—go for it!";
+        // imageUrl =;
     }
 
    document.getElementById("result").innerText = `Your result: ${result}`;
+   document.getElementById("resultImage").src = imageUrl;
 
    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
 
