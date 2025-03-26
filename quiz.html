@@ -124,9 +124,48 @@
                 </fieldset>
                 <br>
 
-                <button type="submit">Submit</button>
+                <fieldset>
+                    <legend>Have you considered getting support (therapy, nicotine replacement, support groups, etc.)?</legend>
+    
+                    <input type="radio" name="support" id="prefer-alone" value="prefer-alone">
+                    <label for="prefer-alone">No, I prefer to do it alone</label>
+    
+                    <input type="radio" name="support" id="not-tried" value="not-tried">
+                    <label for="not-tried">I’ve thought about it but haven’t tried</label>
+    
+                    <input type="radio" name="support" id="methods" value="methods">
+                    <label for="methods">I’ve tried some methods but need more help</label>
+    
+                    <input type="radio" name="support" id="support-resources" value="support-resources">
+                    <label for="support-resources">I already have support and resources</label>
+                </fieldset>
+    
+                <br>
+                <fieldset>
+                    <legend>Do you feel uncomfortable or embarrassed about being a smoker?</legend>
+    
+                    <input type="radio" name="uncomfortable" id="fine-with" value="fine-with">
+                    <label for="fine-with">Not at all, I’m fine with it</label>
+    
+                    <input type="radio" name="uncomfortable" id="sometimes" value="sometimes">
+                    <label for="sometimes">Sometimes, in certain situations</label>
+    
+                    <input type="radio" name="uncomfortable" id="fell-judged" value="fell-judged">
+                    <label for="fell-judged">Yes, I feel judged by others</label>
+    
+                    <input type="radio" name="uncomfortable" id="hate-and-wish" value="hate-and-wish">
+                    <label for="hate-and-wish">I hate it and wish I could stop</label>
+                </fieldset>
+
+                <button type="button" onclick="checkAnswers()">Submit</button>
+                
             </form>
+            <div id="result" style="margin-top: 20px; font-weight: bold;"></div>
+
         </section>
     </main>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
