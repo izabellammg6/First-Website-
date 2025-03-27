@@ -78,7 +78,7 @@ If you intend for the page to work well on mobile devices, consider testing the 
 Some of the conditions are quite long and might benefit from being broken down into more manageable parts, especially if the quiz grows to include more questions.
 
 ## Actions: HTML
-- [] Replaced duplicate "Stay Active" sections with just one.
+- [x] Replaced duplicate "Stay Active" sections with just one.
 
 - [] Improved heading structure to use h3 in the craving sections.
 
@@ -92,7 +92,7 @@ Some of the conditions are quite long and might benefit from being broken down i
 ## Actions: CSS
 - [] Adjusted text colors for readability.
 
-- [] Add the logo on the Nav Bar
+- [x] Add the logo on the Nav Bar
 
 - [] Style Tips to Quit page
 
@@ -112,9 +112,9 @@ Some of the conditions are quite long and might benefit from being broken down i
 
 - [] Add the images to HTML/JavaScript for the quiz results
 
-- [] mplement animations or transitions for displaying results.
+- [] Implement animations or transitions for displaying results.
 
-- [] Add  animations when showing the result.
+- [] Add animations when showing the result.
 
 - [] Improve button interactivity for better user feedback.
 
