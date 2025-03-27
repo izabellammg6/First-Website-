@@ -1,4 +1,5 @@
-function checkAnswers() {
+function checkAnswers(event) {
+    event.preventDefault();
     let score = 0;
     let result = "";
 
