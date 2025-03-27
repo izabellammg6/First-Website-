@@ -5,13 +5,31 @@ body {
     padding-right: 15%;
     color: white;
 }
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;  
+    background-color: white;
+    color: black;
+    z-index: 1000;
+}
+
+
+.content {
+    margin-top: 80px;
+}
+
+header {
+    padding-top: 60px; 
+}
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 10px;
     overflow: hidden;
-    background-color: #AD343E;
     border-radius: 10px;
     text-align: center;
 }
@@ -247,3 +265,7 @@ legend {
     font-size: 22px;
 }
 
+footer {
+    background: red;
+    text-align: center;
+}

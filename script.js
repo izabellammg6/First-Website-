@@ -23,10 +23,6 @@ function checkAnswers() {
         alert("Please answer all questions before submitting.");
         return;
     }
-    // if (answer1 == null || !answer2 || !answer3 || !answer4 || !answer5 || !answer6 || !answer7 || !answer8) {
-    //     alert("Please answer all questions before submitting.");
-    //     return;
-    // }
 
     
     if (answer1 === "1_3") {
@@ -159,3 +155,5 @@ function checkAnswers() {
 }
 
 document.getElementById("submitBtn").addEventListener("click", checkAnswers);
+
+
