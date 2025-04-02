@@ -14,5 +14,3 @@ When working on this project, you should:
     * accessibility features as standard
     * some form of interactivity using JavaScript
     
-    
-    

@@ -104,13 +104,13 @@ function checkAnswers(event) {
         score += 4;
     }
 
-    if (score < 10) {
+    if (score <= 10) {
         result = "You may not be ready to quit yet, but learning more about the benefits of quitting could help.";
-        imageUrl = "img/woman.jpg";
-    } else if (score < 15) {
+        imageUrl = "https://www.workitdaily.com/media-library/image.jpg?id=19295670&width=980&quality=85";
+    } else if (score <= 15) {
         result = "You’re thinking about quitting, but you might need more motivation and a solid plan.";
         imageUrl = "img/cig.jpg";
-    } else if (score < 20) {
+    } else if (score <= 20) {
         result = "You’re determined to quit and just need the right strategy and support.";
         imageUrl = "img/breaking.jpg";
     } else {

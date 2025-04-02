@@ -82,11 +82,11 @@ Some of the conditions are quite long and might benefit from being broken down i
 
 - [] Improved heading structure to use h3 in the craving sections.
 
-- [] Updated the "Missions" section title for better clarity.
+- [x] Updated the "Missions" section title for better clarity.
 
-- [] Added meta keywords for SEO optimization.
+- [x] Added meta keywords for SEO optimization.
  
-- [] Add content to 'manage cravings' section 
+- [x] Add content to 'manage cravings' section 
 
 
 ## Actions: CSS
@@ -94,29 +94,26 @@ Some of the conditions are quite long and might benefit from being broken down i
 
 - [x] Add the logo on the Nav Bar
 
-- [] Style Tips to Quit page
+- [x] Style Tips to Quit page
 
-- [] Added better hover effects and border styles for active states.
+- [x] Added better hover effects and border styles for active states.
 
-- [] Implemented a media query to ensure responsiveness.
+- [x] Implemented a media query to ensure responsiveness.
 
-- [] Applied styles to improve the layout of the cravings section.
+- [x] Applied styles to improve the layout of the cravings section.
 
-- [] Suggested a footer color adjustment to fit the overall theme.
+- [x] Suggested a footer color adjustment to fit the overall theme.
 
-- [] Change all the colors of the website
+- [x] Change all the colors of the website
 
-- [] Make the website responsive through media queries
 
 ## Actions: JavaScript
 
-- [] Add the images to HTML/JavaScript for the quiz results
+- [x] Add the images to HTML/JavaScript for the quiz results
 
-- [] Implement animations or transitions for displaying results.
+- [x] Implement animations or transitions for displaying results.
 
-- [] Add animations when showing the result.
-
-- [] Improve button interactivity for better user feedback.
+- [x] Improve button interactivity for better user feedback.
 
 
 
