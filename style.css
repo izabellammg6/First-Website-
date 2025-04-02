@@ -23,7 +23,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
+    padding: 0px 10px;
     flex-wrap: wrap;
     
 }
@@ -96,6 +96,7 @@ img {
     grid-column: 1 / span 5;
     grid-row: 1;
     margin-left: 15px;
+   text-align: center;
 }
 
 .benefits {
@@ -109,11 +110,32 @@ img {
     border-radius: 10px;
     font-size: 18px;
 }
+.benefits a{
+    color: #EEF5DB;
+    font-size: 20px;
+}
+.benefits a:hover{    
+    color: black;
+    transform: scale(1.05);
+}
 
 .missions {
     grid-column: 1 / span 5;
     grid-row: 3;
     text-align: center;
+}
+.mission-text{
+    margin: 30px;
+    text-align: center;
+}
+.missions a {
+    color: black;
+    font-size: 25px;
+}
+.missions a:hover{
+    
+    color: #AD343E;
+    transform: scale(1.05);
 }
 
 .aside {
@@ -398,6 +420,10 @@ footer {
 
 }
 
+.hard-text{
+    font-size: 1.2em;
+}
+
 @media (max-width: 1200px) {
     body {
         padding-left: 10%;
@@ -414,7 +440,7 @@ footer {
 
     .aside {
         grid-column: 1 / span 4;
-        grid-row: 2;
+        grid-row: 3;
     }
     nav {
         width: 100%;
@@ -429,7 +455,7 @@ footer {
     body {
         padding-left: 5%;
         padding-right: 5%;
-        padding-top: 260px;
+        padding-top: 220px;
 
 
     }
@@ -441,8 +467,8 @@ footer {
 
     nav ul {
         flex-direction: column;
-        padding: 10px 0;
-        gap: 10px;
+        padding: 0 0;
+        gap: 5px;
     }
 
     nav li {
@@ -464,7 +490,7 @@ footer {
 
     .aside {
         grid-column: 1 / span 1;
-        grid-row: 2;
+        grid-row: 3;
     }
 
     .card-container {
@@ -483,6 +509,11 @@ footer {
 
     .title-tips {
         font-size: 36px;
+    }
+
+    .cravingC {
+        justify-content: center; 
+        gap: 10px;
     }
 }
 
